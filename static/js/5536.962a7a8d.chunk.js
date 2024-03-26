@@ -1,0 +1,2 @@
+"use strict";(globalThis.webpackChunkportfolio=globalThis.webpackChunkportfolio||[]).push([[5536],{5536:(a,e,t)=>{async function i(a,e=!0){await a.addParticleUpdater("size",(async()=>{const{SizeUpdater:a}=await t.e(4494).then(t.bind(t,4494));return new a}),e)}t.d(e,{loadSizeUpdater:()=>i})}}]);
+//# sourceMappingURL=5536.962a7a8d.chunk.js.map

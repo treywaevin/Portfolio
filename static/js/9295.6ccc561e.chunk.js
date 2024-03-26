@@ -1,0 +1,2 @@
+"use strict";(globalThis.webpackChunkportfolio=globalThis.webpackChunkportfolio||[]).push([[9295],{9295:(a,n,o)=>{async function i(a,n=!0){await async function(a,n=!0){const{PolygonDrawer:i}=await o.e(8064).then(o.bind(o,8064));await a.addShape("polygon",new i,n)}(a,n),await async function(a,n=!0){const{TriangleDrawer:i}=await o.e(8438).then(o.bind(o,8438));await a.addShape("triangle",new i,n)}(a,n)}o.d(n,{loadPolygonShape:()=>i})}}]);
+//# sourceMappingURL=9295.6ccc561e.chunk.js.map
