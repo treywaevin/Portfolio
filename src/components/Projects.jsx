@@ -84,7 +84,7 @@ function Projects ({homeRef, aboutRef, skillsRef, projectsRef, contactRef}) {
             </Box>
             <Box m={2}>
               <Card sx={cardEffect}>
-                <CardActionArea>
+                <CardActionArea onClick={() => window.open('https://github.com/treywaevin/Portfolio', '_blank')}>
                   <CardMedia
                     component='img'
                     height='194'

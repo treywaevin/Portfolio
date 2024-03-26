@@ -9,6 +9,9 @@ import MailIcon from '@mui/icons-material/Mail';
  * @returns {JSX.Element} Contact component
  */
 function Contact ({homeRef, aboutRef, skillsRef, projectsRef, contactRef}) {
+  const sendForm = (e) => {
+    e.preventDefault();
+  }
   return (
     <>
       <Box sx={{
@@ -35,11 +38,11 @@ function Contact ({homeRef, aboutRef, skillsRef, projectsRef, contactRef}) {
             <IconButton component='a' href='https://github.com/treywaevin' target='_blank'>
               <GitHubIcon sx={{color: 'black', fontSize: 40}}/>
             </IconButton>
-            <IconButton>
+            <IconButton component='a' href='mailto:aevin.eliares@gmail.com'>
               <MailIcon sx={{color: 'black', fontSize: 40}}/>
             </IconButton>
           </Box>
-          <form>
+          <form obSubmit={sendForm}>
             <Grid container spacing={1} padding={5}>
               <Grid item xs={12} md={6}>
                 <TextField label='First Name' variant='outlined' inputProps={{style:{color:' black'}}} fullWidth required/>
