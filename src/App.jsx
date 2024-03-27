@@ -1,5 +1,4 @@
 import Home from './components/Home';
-import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import {createTheme, ThemeProvider} from "@mui/material";
 /**
  * 
@@ -24,11 +23,7 @@ function App() {
   document.body.style.backgroundColor = portfolioTheme.palette.background.default
   return (
     <ThemeProvider theme={portfolioTheme}>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />} />
-        </Routes>
-      </BrowserRouter>
+      <Home />
     </ThemeProvider>
   );
 }

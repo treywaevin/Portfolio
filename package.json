@@ -1,9 +1,10 @@
 {
-  "homepage": "http://treywaevin.github.io/portfolio",
+  "homepage": "http://treywaevin.github.io/Portfolio",
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emailjs/browser": "^4.3.3",
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.0",
     "@mdi/js": "^7.4.47",
@@ -15,6 +16,7 @@
     "@testing-library/user-event": "^13.5.0",
     "@tsparticles/all": "^3.3.0",
     "@tsparticles/react": "^3.0.0",
+    "emailjs": "^4.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.22.3",
@@ -39,17 +41,18 @@
   },
   "browserslist": {
     "production": [
-      ">0.2%",
+      "> 5%",
       "not dead",
       "not op_mini all"
     ],
     "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
+      "> 5%",
+      "not dead",
+      "not op_mini all"
     ]
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "gh-pages": "^6.1.1"
   }
 }

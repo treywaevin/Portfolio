@@ -10,10 +10,22 @@ function Socials () {
       display: {xs: 'none', md: 'block'}
     }}>
       <Stack alignItems='flex-start' padding={3}>
-        <IconButton component='a' href='https://www.linkedin.com/in/aevin-eliares/' target='_blank'>
+        <IconButton component='a' href='https://www.linkedin.com/in/aevin-eliares/' target='_blank'
+        sx={{
+          transition: 'transform 0.1s ease-in-out',
+          '&:hover': {
+            transform: 'scale(1.1)',
+          },
+        }}>
           <LinkedInIcon sx={{color: 'white', fontSize: 40}}/>
         </IconButton>
-        <IconButton component='a' href='https://github.com/treywaevin' target='_blank'>
+        <IconButton component='a' href='https://github.com/treywaevin' target='_blank'
+        sx={{
+          transition: 'transform 0.1s ease-in-out',
+          '&:hover': {
+            transform: 'scale(1.1)',
+          },
+        }}>
           <GitHubIcon sx={{color: 'white', fontSize: 40}}/>
         </IconButton>
       </Stack>

@@ -12,6 +12,12 @@ import {List, ListItem} from '@mui/material';
  */
 function NavBar({homeRef, aboutRef, skillsRef, projectsRef, contactRef}) {
     const [drawerOpen, setDrawerOpen] = useState(false);
+    const boxStyle = {
+      transition: 'transform 0.1s ease-in-out',
+      '&:hover': {
+        transform: 'scale(1.1)',
+      },
+    }
     return (
       <>
         <AppBar style={{
@@ -35,7 +41,9 @@ function NavBar({homeRef, aboutRef, skillsRef, projectsRef, contactRef}) {
               }}>
                 <Button onClick={() => {
                   homeRef.current.scrollIntoView({behavior: 'smooth'})
-                }}>
+                }}
+                sx={boxStyle}
+                >
                   <Typography
                     color='textPrimary'
                     variant="h6"
@@ -45,7 +53,9 @@ function NavBar({homeRef, aboutRef, skillsRef, projectsRef, contactRef}) {
                 </Button>
                 <Button onClick={() => {
                   aboutRef.current.scrollIntoView({behavior: 'smooth'})
-                }}>
+                }}
+                  sx={boxStyle}
+                >
                   <Typography
                     color='textPrimary'
                     variant="h6"
@@ -55,7 +65,9 @@ function NavBar({homeRef, aboutRef, skillsRef, projectsRef, contactRef}) {
                 </Button>
                 <Button onClick={() => {
                   skillsRef.current.scrollIntoView({behavior: 'smooth'})
-                }}>
+                }}
+                  sx={boxStyle}
+                >
                   <Typography
                     color='textPrimary'
                     variant="h6"
@@ -65,7 +77,9 @@ function NavBar({homeRef, aboutRef, skillsRef, projectsRef, contactRef}) {
                 </Button>
                 <Button onClick={() => {
                   projectsRef.current.scrollIntoView({behavior: 'smooth'})
-                }}>
+                }}
+                  sx={boxStyle}
+                >
                   <Typography
                     color='textPrimary'
                     variant="h6"
@@ -75,7 +89,9 @@ function NavBar({homeRef, aboutRef, skillsRef, projectsRef, contactRef}) {
                 </Button>
                 <Button onClick={() => {
                   contactRef.current.scrollIntoView({behavior: 'smooth'})
-                }}>
+                }}
+                  sx={boxStyle}
+                >
                   <Typography
                     color='textPrimary'
                     variant="h6"
@@ -94,6 +110,7 @@ function NavBar({homeRef, aboutRef, skillsRef, projectsRef, contactRef}) {
               <SwipeableDrawer
                 anchor='top'
                 open={drawerOpen}
+                onOpen={() => setDrawerOpen(true)}
                 onClose={() => setDrawerOpen(false)} 
               >
                 <List sx={{backgroundColor: '#7ae582'}}>
