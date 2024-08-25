@@ -106,16 +106,16 @@ function Welcome({homeRef, aboutRef, skillsRef, projectsRef, contactRef}) {
     }, 500);
     setTimeout(() => { 
       setSecondSlide(true);
-    }, 1500);
+    }, 1000);
     setTimeout(() => {
       setThirdSlide(true);
-    }, 2500);
+    }, 1500);
     setTimeout(() => {
       setSwingAnim(true);
-    }, 3500);
+    }, 2000);
     setTimeout(() => {
       setBounceAnim(true);
-    }, 2500);
+    }, 1500);
   },[]);
     return (
       <>
@@ -163,7 +163,7 @@ function Welcome({homeRef, aboutRef, skillsRef, projectsRef, contactRef}) {
               }}
             >
               An aspiring
-              <span style={{color: '#7ae582'}}> software developer </span> studying
+              <span style={{color: '#7ae582'}}> Full-Stack Developer </span> recently
             </Typography>
             <Typography 
               variant={isMobile ? 'h5' :'h4'}
@@ -174,7 +174,7 @@ function Welcome({homeRef, aboutRef, skillsRef, projectsRef, contactRef}) {
                 animation: thirdSlide && `${slideIn} 1s`,
               }}
             >
-              computer science at UC Santa Cruz
+              graduated from UC Santa Cruz.
             </Typography>
             <a href={resume} target='_blank' rel='noopener noreferrer'>
               <Button

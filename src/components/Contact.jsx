@@ -97,7 +97,7 @@ function Contact ({homeRef, aboutRef, skillsRef, projectsRef, contactRef}) {
       </Box>
       <Box sx={{bottom: 0, padding: 2, bgcolor: 'black'}}>
         <Typography variant='body1' align='center' color='white'>
-          @2024 Aevin Eliares
+        ©2024 Aevin Eliares
         </Typography>
       </Box>
       <Snackbar

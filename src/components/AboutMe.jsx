@@ -1,4 +1,6 @@
 import {Box, Typography} from '@mui/material';
+import PlaceIcon from '@mui/icons-material/Place';
+import banner from '../banner.png';
 function About ({homeRef, aboutRef, skillsRef, projectsRef, contactRef}) {
   return (
     <Box
@@ -21,12 +23,33 @@ function About ({homeRef, aboutRef, skillsRef, projectsRef, contactRef}) {
         <Typography variant='h3' color='textPrimary' sx={{textAlign: 'center', mb: 2}}>
           About Me
         </Typography>
+        <Box component='img' src={banner} alt='banner'
+            sx={{
+              width: '100%',
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+              justifyContent: 'center',
+              height: 'auto',
+              mb: 5,
+            }}
+          />
+        <Box sx={{
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          mb: 2,
+        }}>
+          <PlaceIcon sx={{color: 'white', fontSize: 20, marginRight: 2}}/>
+          <Typography variant='body1' color='white' sx={{textAlign: 'center', fontSize: 20}}>
+            Modesto, California
+          </Typography>
+        </Box>
         <Typography variant='body1' color='white' sx={{textAlign: 'center', mb: 2}}>
-          I am currently pursuing a Bachelor's degree in Computer Science at the University of California, Santa Cruz.
-          With a keen interest in AI and Full Stack Development, I am passionate about exploring the intersections of these fields to create innovative solutions. As a senior in my program, I have dedicated myself to learning the principles and technologies that drive both artificial intelligence and full stack development through the many courses I have took. My goal is to leverage this knowledge to contribute meaningfully to projects that push the boundaries of technology and enhance user experiences. Whether it's developing intelligent algorithms or crafting seamless user interfaces, I'm always up for the challenge of creating technology that makes a real impact on people's lives.
+          Hi, I'm Aevin, a recent Computer Science graduate from UC Santa Cruz with a deep passion for Full-Stack Development. My journey in tech has equipped me with strong foundations in TypeScript, JavaScript, Python, and SQL, as well as practical experience with frameworks like React, Next.js, and Node.js.
         </Typography>
         <Typography variant='body1' color='white' sx={{textAlign: 'center'}}>
-          While I'm not coding, I enjoy producing music such as house and hardstyle, DJing electronic music, and lifting weights at the gym.
+          As I embark on my career, I'm eager to apply my skills to meaningful projects and continue evolving as a developer. I'm passionate about creating efficient, user-centric applications, whether it’s working on the frontend, backend, or anything in between.
         </Typography>
       </Box>
     </Box>

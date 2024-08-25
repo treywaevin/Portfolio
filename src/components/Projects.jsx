@@ -3,8 +3,9 @@ import {CardMedia, CardContent} from '@mui/material';
 import SlugSlack from '../images/project1.png'
 import MyLegacy from '../images/project2.png'
 import Portfolio from '../images/project3.png'
-import HTTP from '../images/project4.png'
 import RemindMe from '../images/project5.png'
+import WhatsMyImage from '../images/project6.png'
+import amazoff from '../images/amazoff.png'
 /**
  * 
  * @returns {JSX.Element} Projects component
@@ -34,6 +35,30 @@ function Projects ({homeRef, aboutRef, skillsRef, projectsRef, contactRef}) {
             flexWrap: 'wrap',
             justifyContent: 'center',
           }}>
+            <Box m={2}>
+              <Card sx={cardEffect}>
+                <CardActionArea onClick={() => window.open('https://harrisonis.cool/', '_blank')}>
+                  <CardMedia
+                    component='img'
+                    height='194'
+                    width='378'
+                    image={amazoff}
+                    alt='amazoff'
+                  />
+                  <CardContent>
+                    <Typography variant='h5' color='black'>
+                      Amazoff
+                    </Typography>
+                    <Typography variant='body3' color='black'>
+                      React, Next, GraphQL, PostgreSQL, Stripe-API
+                    </Typography>
+                    <Typography variant='body2' color='black' sx={{marginTop: 1}}>
+                      A full-stack website that replicates the functionality <br /> of Amazon, a popular e-commerce platform.
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
+              </Card>
+            </Box>
             <Box m={2}>
               <Card sx={cardEffect}>
                 <CardActionArea onClick={() => window.open('https://youtu.be/8MF-wAnohuI?si=XxmrzppuFtOyPMMT', '_blank')}>
@@ -108,30 +133,6 @@ function Projects ({homeRef, aboutRef, skillsRef, projectsRef, contactRef}) {
             </Box>
             <Box m={2}>
               <Card sx={cardEffect}>
-                <CardActionArea onClick={() => window.open('https://github.com/treywaevin/HTTPServer', '_blank')}>
-                  <CardMedia
-                    component='img'
-                    height='194'
-                    width='378'
-                    image={HTTP}
-                    alt='HTTP server'
-                  />
-                  <CardContent>
-                    <Typography variant='h5' color='black'>
-                      HTTP Server
-                    </Typography>
-                    <Typography variant='body3' color='black'>
-                      C
-                    </Typography>
-                    <Typography variant='body2' color='black' sx={{marginTop: 1}}>
-                      Built an HTTP server from scratch that is able to serve multiple<br />clients simultaneously.
-                    </Typography>
-                  </CardContent>
-                </CardActionArea>
-              </Card>
-            </Box>
-            <Box m={2}>
-              <Card sx={cardEffect}>
                 <CardActionArea onClick={() => window.open('https://github.com/treywaevin/RemindMe', '_blank')}>
                   <CardMedia
                     component='img'
@@ -149,6 +150,30 @@ function Projects ({homeRef, aboutRef, skillsRef, projectsRef, contactRef}) {
                     </Typography>
                     <Typography variant='body2' color='black' sx={{marginTop: 1}}>
                       A discord bot that DMs users reminders at a specified time. <br /> Built with discord.py.
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
+              </Card>
+            </Box>
+            <Box m={2}>
+              <Card sx={cardEffect}>
+                <CardActionArea onClick={() => window.open('https://github.com/treywaevin/WhatsMyImage', '_blank')}>
+                  <CardMedia
+                    component='img'
+                    height='194'
+                    width='378'
+                    image={WhatsMyImage}
+                    alt='WhatsMyImage'
+                  />
+                  <CardContent>
+                    <Typography variant='h5' color='black'>
+                      WhatsMyImage
+                    </Typography>
+                    <Typography variant='body3' color='black'>
+                      React, Flask, Pytorch
+                    </Typography>
+                    <Typography variant='body2' color='black' sx={{marginTop: 1}}>
+                      A website that identifies what is in an image a user uploads. <br /> Uses ResNet50 Model trained on ImageNet dataset.
                     </Typography>
                   </CardContent>
                 </CardActionArea>

@@ -1,9 +1,11 @@
 import {Box, Typography} from '@mui/material';
 import Icon from '@mdi/react';
 import {mdiLanguagePython, mdiLanguageCpp} from '@mdi/js';
-import {mdiLanguageC, mdiLanguageJavascript, mdiDatabase, mdiNpm} from '@mdi/js';
-import {mdiReact, mdiDocker, mdiMicrosoftVisualStudioCode, mdiNodejs} from '@mdi/js';
-import {mdiGit, mdiGithub, mdiGitlab, mdiElephant, mdiLanguageSwift} from '@mdi/js';
+import {mdiLanguageC, mdiLanguageJavascript, mdiDatabase} from '@mdi/js';
+import {mdiReact, mdiDocker, mdiNodejs} from '@mdi/js';
+import {mdiGit, mdiElephant} from '@mdi/js';
+import { mdiGraphql, mdiLanguageTypescript, mdiAlphaNCircle } from '@mdi/js';
+import {mdiFlask} from '@mdi/js'
 import {Grid} from '@mui/material';
 /**
  * 
@@ -74,14 +76,14 @@ function Skills ({homeRef, aboutRef, skillsRef, projectsRef, contactRef}) {
             </Grid>
             <Grid item xs={4} sm={3} md={3} lg={3} xl={true}>
               <Box sx={boxStyle}>
-                <Icon path={mdiDatabase} size={appSize} color={appColor}/>
-                <Typography variant='h6' color='white'>SQL</Typography>
+                <Icon path={mdiLanguageTypescript} size={appSize} color={appColor}/>
+                <Typography variant='h6' color='white'>JavaScript</Typography>
               </Box>
             </Grid>
             <Grid item xs={4} sm={3} md={3} lg={3} xl={true}>
               <Box sx={boxStyle}>
-                <Icon path={mdiLanguageSwift} size={appSize} color={appColor}/>
-                <Typography variant='h6' color='white'>Swift</Typography>
+                <Icon path={mdiDatabase} size={appSize} color={appColor}/>
+                <Typography variant='h6' color='white'>SQL</Typography>
               </Box>
             </Grid>
           </Grid>
@@ -91,10 +93,22 @@ function Skills ({homeRef, aboutRef, skillsRef, projectsRef, contactRef}) {
         <Typography variant='h4' color='white'
           sx={{textAlign: 'center', mb: 4, textDecoration: 'underline', textDecorationColor: '#7ae582'}}
         >
-          Technologies
+          Technologies/Frameworks
         </Typography>
         <Box>
           <Grid container justifyContent='center' spacing={2}>
+            <Grid item xs={4} sm={3} md={3} lg={3} xl={true}>
+              <Box sx={boxStyle}>
+                <Icon path={mdiAlphaNCircle} size={appSize} color={appColor}/>
+                <Typography variant='h6' color='white'>Next</Typography>
+              </Box>
+            </Grid>
+            <Grid item xs={4} sm={3} md={3} lg={3} xl={true}>
+              <Box sx={boxStyle}>
+                <Icon path={mdiGraphql} size={appSize} color={appColor}/>
+                <Typography variant='h6' color='white'>GraphQL</Typography>
+              </Box>
+            </Grid>
             <Grid item xs={4} sm={3} md={3} lg={3} xl={true}>
               <Box sx={boxStyle}>
                 <Icon path={mdiReact} size={appSize} color={appColor}/>
@@ -121,32 +135,14 @@ function Skills ({homeRef, aboutRef, skillsRef, projectsRef, contactRef}) {
             </Grid>
             <Grid item xs={4} sm={3} md={3} lg={3} xl={true}>
               <Box sx={boxStyle}>
-                <Icon path={mdiNpm} size={appSize} color={appColor}/>
-                <Typography variant='h6' color='white'>NPM</Typography>
-              </Box>
-            </Grid>
-            <Grid item xs={4} sm={3} md={3} lg={3} xl={true}>
-              <Box sx={boxStyle}>
-                <Icon path={mdiMicrosoftVisualStudioCode} size={appSize} color={appColor}/>
-                <Typography variant='h6' color='white'>VSCode</Typography>
+                <Icon path={mdiFlask} size={appSize} color={appColor}/>
+                <Typography variant='h6' color='white'>Flask</Typography>
               </Box>
             </Grid>
             <Grid item xs={4} sm={3} md={3} lg={3} xl={true}>
               <Box sx={boxStyle}>
                 <Icon path={mdiGit} size={appSize} color={appColor}/>
                 <Typography variant='h6' color='white'>Git</Typography>
-              </Box>
-            </Grid>
-            <Grid item xs={4} sm={3} md={3} lg={3} xl={true}>
-              <Box sx={boxStyle}>
-                <Icon path={mdiGithub} size={appSize} color={appColor}/>
-                <Typography variant='h6' color='white'>Github</Typography>
-              </Box>
-            </Grid>
-            <Grid item xs={4} sm={3} md={3} lg={3} xl={true}>
-              <Box sx={boxStyle}>
-                <Icon path={mdiGitlab} size={appSize} color={appColor}/>
-                <Typography variant='h6' color='white'>Gitlab</Typography>
               </Box>
             </Grid>
           </Grid>
