@@ -42,11 +42,11 @@ function About ({homeRef, aboutRef, skillsRef, projectsRef, contactRef}) {
         }}>
           <PlaceIcon sx={{color: 'white', fontSize: 20, marginRight: 2}}/>
           <Typography variant='body1' color='white' sx={{textAlign: 'center', fontSize: 20}}>
-            Modesto, California
+            Folsom, California
           </Typography>
         </Box>
         <Typography variant='body1' color='white' sx={{textAlign: 'center', mb: 2}}>
-          Hi, I'm Aevin, a recent Computer Science graduate from UC Santa Cruz with a deep passion for Full-Stack Development. My journey in tech has equipped me with strong foundations in TypeScript, JavaScript, Python, and SQL, as well as practical experience with frameworks like React, Next.js, and Node.js.
+          Hi, I'm Aevin, a Software Quality Assurance Engineer at Inductive Automation
         </Typography>
         <Typography variant='body1' color='white' sx={{textAlign: 'center'}}>
           As I embark on my career, I'm eager to apply my skills to meaningful projects and continue evolving as a developer. I'm passionate about creating efficient, user-centric applications, whether it’s working on the frontend, backend, or anything in between.

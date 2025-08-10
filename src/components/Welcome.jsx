@@ -162,8 +162,8 @@ function Welcome({homeRef, aboutRef, skillsRef, projectsRef, contactRef}) {
                 animation: thirdSlide && `${slideIn} 1s`,
               }}
             >
-              An aspiring
-              <span style={{color: '#7ae582'}}> Full-Stack Developer </span> recently
+              A
+              <span style={{color: '#7ae582'}}> Software Quality Assurance Engineer </span> at
             </Typography>
             <Typography 
               variant={isMobile ? 'h5' :'h4'}
@@ -174,7 +174,7 @@ function Welcome({homeRef, aboutRef, skillsRef, projectsRef, contactRef}) {
                 animation: thirdSlide && `${slideIn} 1s`,
               }}
             >
-              graduated from UC Santa Cruz.
+              Inductive Automation.
             </Typography>
             <a href={resume} target='_blank' rel='noopener noreferrer'>
               <Button
